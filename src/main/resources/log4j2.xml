@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT" follow="true">
+			<PatternLayout>
+				<pattern>%d %p %C{1.} [%t] %m%n</pattern>
+			</PatternLayout>
+		</Console>
+	</Appenders>
+	<Loggers>
+ 		<Logger name="cn.com.taiji" level="debug"/> 
+		<Root level="info">
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+</Configuration>  
+
+<!-- http://logging.apache.org/log4j/2.x/manual/configuration.html -->
